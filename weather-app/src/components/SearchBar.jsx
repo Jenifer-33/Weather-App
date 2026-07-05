@@ -9,6 +9,8 @@ const SearchBar = ({ onSearch }) => {
   setSearch("");
     navigate(`/weather?city=${search}`);
 };
+console.log("onSearch:", onSearch);
+console.log("typeof onSearch:", typeof onSearch);
 const handleKeyDown = (e) => {
   if (e.key === "Enter") {
     handleSearch();

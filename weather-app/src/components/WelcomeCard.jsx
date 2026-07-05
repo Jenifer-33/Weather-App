@@ -21,7 +21,7 @@ const WelcomeCard = ({ onSearch, error }) => {
         <h6 className=" mb-3 fw-bold text-center">
           Discover real-time weather updates for cities around the world{" "}
         </h6>
-        <SearchBar onSearch={onSearch} />
+        <SearchBar onSearch={() => {}} />
         {error && <div className="alert alert-danger mt-3">{error}</div>}
         <div className="d-inline-flex  mt-2  gap-3 ">
           {parameters.map((parameter, index) => (
