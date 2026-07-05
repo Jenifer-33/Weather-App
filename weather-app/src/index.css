@@ -1,0 +1,222 @@
+.welcome{
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: background-image 0.6s ease-in-out;
+}
+.hero-section{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px;
+}
+.city-btn{
+    border-radius:30px;
+    padding:8px 20px;
+    transition:.3s;
+}
+
+.city-btn:hover{
+    transform:translateY(-3px);
+}
+.search-input {
+  width: 360px;        
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 12px 0 0 12px;
+  font-size: 1rem;
+  outline: none;
+  background: white;
+  color: #333;
+
+}
+
+.search-btn {
+  padding: 0.8rem 2.2rem;  
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  font-size: 1.05rem;        
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.search-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(59,130,246,.35);
+}
+.search-btn:active {
+  transform: scale(0.96);
+}
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease-in-out;
+  background-color: #1a1a2e;
+}
+
+.app-overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 2rem 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+.weather-outer-card {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.weather-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.temp-card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  min-width: 450px;
+  position: relative;
+}
+.temp-card-overlay {
+  backdrop-filter: blur(1px);
+  background: rgba(16, 16, 16, 0.271);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;  
+} 
+.stats-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.forecast-section {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.forecast-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.forecast-line {
+  flex-grow: 1;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.forecast-title {
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.forecast-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.forecast-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.forecast-card--today {
+  border: 2px solid orange;
+}
+
+.forecast-day {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.forecast-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-temp-max {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.forecast-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.top-bar .search-bar-wrapper {
+  margin-bottom: 0;
+}
